@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".GameScreen">
+
+    <ImageView
+        android:id="@+id/gameImageView"
+        android:layout_width="334dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/door" />
+
+    <TextView
+        android:id="@+id/gameTextView"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/aldrich"
+        android:text="This is text"
+        android:textAlignment="textStart"
+        android:textColor="#f9f9f9"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameImageView" />
+
+    <Button
+        android:id="@+id/choice2"
+        android:layout_width="308dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="Choice 2"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/choice1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choice1" />
+
+    <Button
+        android:id="@+id/choice1"
+        android:layout_width="308dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="Choice 1"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameTextView" />
+
+    <Button
+        android:id="@+id/choice3"
+        android:layout_width="308dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="Choice 3"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/choice2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choice2" />
+
+    <Button
+        android:id="@+id/choice4"
+        android:layout_width="308dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="Choice 4"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/choice3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choice3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
